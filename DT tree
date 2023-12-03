@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Glucose &le; 127.5<br/>entropy = 0.946<br/>samples = 576<br/>value = [366, 210]<br/>class = 0>, fillcolor="#f4c9ab"] ;
+1 [label=<BMI &le; 26.45<br/>entropy = 0.708<br/>samples = 352<br/>value = [284, 68]<br/>class = 0>, fillcolor="#eb9f68"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 0.139<br/>samples = 102<br/>value = [100, 2]<br/>class = 0>, fillcolor="#e6843d"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.833<br/>samples = 250<br/>value = [184, 66]<br/>class = 0>, fillcolor="#eeae80"] ;
+1 -> 3 ;
+4 [label=<Glucose &le; 165.5<br/>entropy = 0.948<br/>samples = 224<br/>value = [82, 142]<br/>class = 1>, fillcolor="#abd6f4"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 0.997<br/>samples = 158<br/>value = [74, 84]<br/>class = 1>, fillcolor="#e7f3fc"] ;
+4 -> 5 ;
+6 [label=<entropy = 0.533<br/>samples = 66<br/>value = [8, 58]<br/>class = 1>, fillcolor="#54abe9"] ;
+4 -> 6 ;
+}
